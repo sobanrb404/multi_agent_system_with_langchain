@@ -1,0 +1,24 @@
+# Environment Variables (CRITICAL: NEVER COMMIT API KEYS)
+.env
+backend/.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+*.egg-info/
+
+# Node / React
+frontend/node_modules/
+node_modules/
+frontend/dist/
+dist/
+.vite/
+
+# Operating System Files
+.DS_Store
+Thumbs.db

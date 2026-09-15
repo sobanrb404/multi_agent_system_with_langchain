@@ -1,0 +1,36 @@
+# Web framework for building agent APIs and endpoints
+fastapi
+# High-performance ASGI server (C-optimized uvloop to save CPU)
+uvicorn[standard]
+
+# Core LangChain
+langchain
+langchain-core
+langchain-community
+langchain-google-genai
+langgraph
+
+
+# Google Gemini
+google-generativeai
+
+# Tavily Web Search
+tavily-python
+
+# Web Scraping - BeautifulSoup
+beautifulsoup4
+requests
+
+# Environment Variables
+python-dotenv
+
+# Optional: HTML parsing / HTTP
+lxml
+
+# Async HTTP support
+httpx
+aiohttp
+
+# rich - for text visuals in terminals
+rich
+
