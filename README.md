@@ -1,6 +1,6 @@
 ## Interface Overview
 
-![ResearchMind Interface Preview](assets/interface-preview.png)
+![ResearchMind Interface Preview](interface-preview.png)
 
 # ResearchMind: Autonomous Multi-Agent Research Engine
 
