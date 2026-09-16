@@ -33,4 +33,3 @@ aiohttp
 
 # rich - for text visuals in terminals
 rich
-

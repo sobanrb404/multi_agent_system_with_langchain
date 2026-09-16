@@ -27,7 +27,7 @@ The pipeline executes sequentially, isolating responsibilities across four disti
 
 3. **Synthesis Chain (Writer)**
    - **Role:** Comprehensive report composition.
-   - **Mechanism:** Prompt-engineered LangChain Expression Language (LCEL) chain backed by Google Gemini 2.5 Flash.
+   - **Mechanism:** Prompt-engineered LangChain Expression Language (LCEL) chain backed by Google Gemini 3.5 Flash Lite.
    - **Output:** Structured Markdown report containing executive introduction, core findings, analytical synthesis, and verified source citations.
 
 4. **Quality Audit Chain (Critic)**
@@ -43,7 +43,7 @@ The pipeline executes sequentially, isolating responsibilities across four disti
 - **Framework:** FastAPI (Python 3.12)
 - **ASGI Server:** Uvicorn with `uvloop`
 - **Orchestration:** LangChain Core, LangChain Google GenAI
-- **LLM Foundation:** Google Gemini 2.5 Flash (`temperature=0` for deterministic outputs)
+- **LLM Foundation:** Google Gemini 3.5 Flash Lite (`temperature=0` for deterministic outputs)
 - **Tools & Retrieval:** Tavily Search API, Requests, BeautifulSoup4
 - **Validation:** Pydantic v2
 
@@ -103,8 +103,8 @@ data: {"step": 4, "agent": "critic", "status": "done", "message": "Audit complet
 
 1. Clone the repository and navigate to the backend directory:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name/backend
+   git clone git@github.com:sobanrb404/multi_agent_system_with_langchain.git
+   cd multi_agent_system_with_langchain/backend
    ```
 
 2. Initialize and activate a virtual environment:
@@ -126,7 +126,7 @@ data: {"step": 4, "agent": "critic", "status": "done", "message": "Audit complet
 
 5. Launch the FastAPI server:
    ```bash
-   uvicorn api:app --reload --port 8000
+   uvicorn app:app --reload --port 8000
    ```
    Interactive OpenAPI documentation will be accessible at `http://localhost:8000/docs`.
 
