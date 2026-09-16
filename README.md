@@ -136,7 +136,7 @@ data: {"step": 4, "agent": "critic", "status": "done", "message": "Audit complet
 
 1. Open a new terminal and navigate to the frontend directory:
    ```bash
-   cd your-repo-name/frontend
+   cd multi_agent_system_with_langchain/frontend
    ```
 
 2. Install dependencies:
